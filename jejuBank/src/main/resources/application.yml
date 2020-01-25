@@ -1,0 +1,23 @@
+server:
+  port: 9091
+
+spring:
+  application:
+    name: eventsourcing-cqrs-jejuBank
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/jeju
+    username: jeju
+    password: jeju
+    driverClassName: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+axon:
+  serializer:
+    general: xstream
+  axonserver:
+    servers: localhost:8124
+
+logging.level.com.cqrs.jeju : debug

@@ -1,0 +1,6 @@
+rootProject.name = 'demo'
+include 'command'
+include 'query'
+include 'common'
+include 'seoulBank'
+include 'jejuBank'

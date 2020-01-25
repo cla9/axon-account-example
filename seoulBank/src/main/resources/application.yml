@@ -1,0 +1,12 @@
+server:
+  port: 9092
+
+spring:
+  application:
+    name: eventsourcing-cqrs-seoulBank
+
+axon:
+  serializer:
+    general: xstream
+  axonserver:
+    servers: localhost:8124

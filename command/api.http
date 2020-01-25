@@ -1,0 +1,49 @@
+POST http://localhost:8080/holder
+Content-Type: application/json
+
+{
+	"holderName" : "Kevin",
+	"tel" : "02-2645-5678",
+	"address" : "OO시 OO구",
+    "company" : "Korea"
+}
+
+###
+
+POST http://localhost:8080/account
+Content-Type: application/json
+
+{
+  "holderID" : "b01fae84-e8a5-427d-a5f4-baa7376b7163"
+}
+
+###
+
+POST http://localhost:8080/deposit
+Content-Type: application/json
+
+{
+  "accountID" : "190b3376-b396-4cbf-b7bb-13debb726e34",
+  "holderID" : "a1dca2e7-f3f6-451a-ba64-00c40bad0dfa",
+  "amount" : 300
+}
+
+###
+
+POST http://localhost:8080/withdrawal
+Content-Type: application/json
+
+{
+  "accountID" : "0945aef6-8000-42b2-9401-2bd69a2114f3",
+  "holderID" : "f31a8608-f017-4852-9c08-8b217af69d94",
+  "amount" : 5
+}
+
+###
+POST localhost:9091/account
+Content-Type: application/json
+
+{
+	"accountID" : "test",
+	"balance" : 100
+}

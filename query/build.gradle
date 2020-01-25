@@ -1,0 +1,15 @@
+ext{
+    axonVersion = "4.2.1"
+}
+dependencies{
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.2.6'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    implementation group: 'org.axonframework', name: 'axon-spring-boot-starter', version: "$axonVersion"
+    implementation group: 'org.axonframework', name: 'axon-configuration', version: "$axonVersion"
+    implementation group: 'org.springframework.retry', name: 'spring-retry'
+    implementation group: 'io.projectreactor', name: 'reactor-core'
+}

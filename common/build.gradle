@@ -1,0 +1,15 @@
+ext{
+    axonVersion = "4.2.1"
+}
+bootJar { 
+    enabled = false 
+}
+jar {
+    enabled = true
+}
+dependencies{
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    implementation group: 'org.axonframework', name: 'axon-messaging', version: "$axonVersion"
+    implementation group: 'org.axonframework', name: 'axon-spring-boot-starter', version: "$axonVersion"
+}
